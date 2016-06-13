@@ -6,10 +6,6 @@ const delim = "?!.;,*"
 const space = " "
 
 func isDelim(c string) bool {
-	/*if strings.Contains(delim, c) {
-		return true
-	}
-	return false*/
 	return strings.Contains(delim, c)
 }
 
@@ -51,7 +47,3 @@ func TotalWordCount(s string) int {
 	strSlice := strings.Fields(cleanDelimiter(s))
 	return len(strSlice)
 }
-
-/*func main() {
-
-}*/
