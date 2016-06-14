@@ -1,6 +1,9 @@
 package wordCore
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 const delim = "?!.;,*"
 const space = " "
@@ -27,6 +30,7 @@ func cleanDelimiter(input string) string {
 }
 
 func SingleWordCount(s string, uniqueSensitive bool) map[string]int {
+	fmt.Println("stinr=", s)
 	strSlice := strings.Fields(cleanDelimiter(s))
 	result := make(map[string]int)
 
